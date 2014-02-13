@@ -1,11 +1,12 @@
+#include "common_define.h"
 #include "str_to_int.h"
 
 int32_t str_to_int(unsigned char * str){
     uint32_t ret = 0;
-    int negative = 0;
+    BOOL negative = FALSE;
 
     if(*str=='-'){
-        negative = 1;
+        negative = TRUE;
         str++;
     }
 
